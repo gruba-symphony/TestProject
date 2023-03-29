@@ -42,7 +42,7 @@ public class CartTests{
         productsTests.addThreeProductsToCart();
         productsTests.goToCart();
         cartPage.numberOfItemsInCart(3);
-    }
+    } //Test 2 - Done
 
     @Test
     public void checkoutCart(){
@@ -55,5 +55,5 @@ public class CartTests{
         cartPage.continueCheckout();
         cartPage.finishCheckout();
         cartPage.backToHomePage();
-    }
+    } //Test 4 - Done
 }
