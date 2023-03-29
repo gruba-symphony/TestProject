@@ -48,7 +48,7 @@ public class ProductsTests {
     public void removeProductFromCart() {
         addProductToCart();
         productsPage.removeProduct("Sauce Labs Backpack").contentEquals("0");
-    } //Test for remove single added
+    } //Test 3 - Done (Although it should be expanded to have the option to remove any from chosen, not single)
 
     @Test
     public void addThreeProductsToCart() {
