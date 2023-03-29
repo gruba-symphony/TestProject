@@ -42,25 +42,25 @@ public class ProductsTests {
     @Test
     public void addProductToCart() {
         productsPage.addProduct("Sauce Labs Backpack").contentEquals("1");
-    }
+    } //Test for add single
 
     @Test
     public void removeProductFromCart() {
         addProductToCart();
         productsPage.removeProduct("Sauce Labs Backpack").contentEquals("0");
-    }
+    } //Test for remove single added
 
     @Test
     public void addThreeProductsToCart() {
         productsPage.addProduct("Sauce Labs Backpack");
         productsPage.addProduct("Sauce Labs Bike Light");
         productsPage.addProduct("Sauce Labs Bolt T-Shirt").contentEquals("3");
-    }
+    } //Test 2 Done
 
     @Test
     public void goToCart() {
         productsPage.openCart();
-    }
+    } //Test to open cart
 
     @Test
     public void getAllProducts() {
@@ -69,5 +69,5 @@ public class ProductsTests {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
+    } //Bonus task - Done
 }
