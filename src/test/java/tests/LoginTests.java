@@ -33,5 +33,5 @@ public class LoginTests {
         loginPage.userNameInput("standard_user");
         loginPage.passwordInput("secret_sauce");
         loginPage.loginSubmit();
-    }
+    } //Test 1 - Done
 }
