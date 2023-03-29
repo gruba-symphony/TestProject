@@ -55,7 +55,7 @@ public class ProductsTests {
         productsPage.addProduct("Sauce Labs Backpack");
         productsPage.addProduct("Sauce Labs Bike Light");
         productsPage.addProduct("Sauce Labs Bolt T-Shirt").contentEquals("3");
-    } //Test 2 Done
+    } //Test to add 3 products
 
     @Test
     public void goToCart() {
